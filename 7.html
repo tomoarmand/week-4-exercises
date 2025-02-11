@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="7.css" />
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="http://requestbin.whapi.cloud/1iwfqtf1" method="POST">
+        <fieldset>
+            <label for="full-name">
+                Enter your full name: <input id="full-name" name="full-name" type="text">
+            </label>
+            <label for="dob">
+                Enter your age: <input id="dob" name="dob" type="date">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="gender-male">
+                <input id="gender-male" name="gender" type="radio" class="inline" value="male">Male
+            </label>
+            <label for="gender-female">
+                <input id="gender-female" name="gender" type="radio" class="inline" value="female">Female
+            </label>
+            <label for="gender-other">
+                <input id="gender-other" name="gender" type="radio" class="inline" value="other">Other
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="email">
+                Enter your email: <input id="email" name="email" type="email">
+            </label>
+            <label for="number">
+                Enter your phone number: <input id="number" name="number" type="text">
+            </label>
+            <label for="address">
+                Enter your address: <textarea id="address" name="address" type="textarea"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="email">
+                Upload your profile picture: <input id="email" name="email" type="file">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred contact method</legend>
+            <label for="contact" name="contact">
+                <select id="contact" name="contact">
+                    <option value="unselected">(select one)</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="mail">Mail</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="username">
+                Username: <input id="username" name="username" type="text">
+            </label>
+            <label for="password">
+                Password: <input id="password" name="password" type="text">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you like to subscribe to our newsletter?</legend>
+            <label for="sub-yes">
+                <input id="sub-yes" value="yes" name="sub" type="radio" class="inline">Yes
+            </label>
+            <label for="sub-no">
+                <input id="sub-no" value="no" name="sub" type="radio" class="inline">No
+            </label>
+        </fieldset>
+                    <label class="terms" for="terms-and-conditions">
+                        <input required type="checkbox" class="inline" id="terms-and-conditions" name="terms-and-conditions">I accept the <a href="http://google.com">terms and conditions</a>
+                </label>
+                
+        <input type="submit" value="Submit">
+        <input type="hidden" name="sender" value="tomoarmand" />
+    </form>
+</body>

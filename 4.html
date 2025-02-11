@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        label {
+            display: block;
+            padding-top: 20px;
+        }
+
+        .submit {
+            margin-top: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://www.google.com" method="POST">
+        <label for="first-name">First Name:</label>
+        <input placeholder="James" type="text" id="first-name" name="first-name">
+        <label for="last-name">Last Name:</label>
+        <input placeholder="Smith" type="text" id="last-name" name="last-name">
+        <label for="email">Email:</label>
+        <!--readonly disables user from editing the field-->
+        <input readonly type="email" id="email" name="email">
+        <label for="age">Age:</label>
+        <input placeholder="21" type="number" id="number" name="number">
+        <label for="password">Password</label>
+        <input readonly type="password" id="password" name="password">
+        <input type="submit" class="submit" value="Submit">
+    </form>
+</body>
+
+</html>

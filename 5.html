@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            input {
+                display: block;
+            }
+
+            label {
+                display: block;
+                padding-top: 20px;
+            }
+
+            .submit {
+                margin-top: 20px
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="http://www.google.com" method="POST">
+            <label for="username">Username:</label>
+            <input minlength="3" maxlength="10" type="text" id="username" name="username"><!--minlength and maxlength-->
+            <label for="password">Password:</label>
+            <input required type="text" id="password" name="password"><!--required-->
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </body>
+
+    </html>
+</body>
+
+</html>
